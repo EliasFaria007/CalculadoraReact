@@ -1,16 +1,45 @@
-# React + Vite
+# Calculadora React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto simples de calculadora feito com React e Vite.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Operações básicas: soma, subtração, multiplicação e divisão
+- Entrada de números e operadores pelo teclado visual
+- Botões para limpar (`C`), apagar último dígito (`Delete`) e calcular (`=`)
+- Tratamento de erros simples para cálculos inválidos
 
-## React Compiler
+## Como executar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Instale as dependências:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+3. Abra a aplicação no navegador usando a URL exibida pelo Vite.
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+## Scripts disponíveis
+
+- `npm run dev` — inicia o app em modo de desenvolvimento
+- `npm run build` — cria a versão de produção
+- `npm run preview` — visualiza o build de produção localmente
+- `npm run lint` — verifica o código com ESLint
+
+## Estrutura do projeto
+
+- `src/App.jsx` — lógica principal da calculadora
+- `src/components/Button/index.jsx` — componente de botão reutilizável
+- `src/App.css` — estilos da calculadora
